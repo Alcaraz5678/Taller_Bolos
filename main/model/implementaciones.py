@@ -58,7 +58,8 @@ class Frame10(Frame):
         self.roll_extra: int | None = None
 
     def calcular_puntaje(self) -> int:
-        pass
+        puntaje = sum(self.rolls)
+        return puntaje
 
     def agregar_roll(self, pins: int):
         if len(self.rolls) < 3:
