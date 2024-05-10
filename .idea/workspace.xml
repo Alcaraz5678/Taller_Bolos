@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1043e005-1567-44f3-a50e-7242f05213ad" name="Changes" comment="Agrego avancees al Código&#10;y modelo de mundo">
+    <list default="true" id="1043e005-1567-44f3-a50e-7242f05213ad" name="Changes" comment="avance en el codigo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/model/excepciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/model/excepciones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/model/implementaciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/model/implementaciones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.consola.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
@@ -101,11 +100,20 @@
       <option name="project" value="LOCAL" />
       <updated>1715311298035</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="avance en el codigo">
+      <option name="closed" value="true" />
+      <created>1715316567487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715316567487</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Agrego avancees al Código&#10;y modelo de mundo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agrego avancees al Código&#10;y modelo de mundo" />
+    <MESSAGE value="avance en el codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="avance en el codigo" />
   </component>
 </project>

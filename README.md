@@ -1,1 +1,5 @@
-![img.png](imagenes/Modelo del mundo.png)
+## MODELO DEL MUNDO DEL PROBLEMA: 
+
+
+
+![img.png](imagenes/img.png)
