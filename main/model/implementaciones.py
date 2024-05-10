@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Optional
-from main.model.excepciones import BolosException, LanzamientoInvalido, FrameIncompletoEXception, \
-    FrameInexisenteException, RollExtraInvalidoException
+from main.model.excepciones import BolosExceptionError, LanzamientoInvalidoError, \
+    FrameInexisenteExceptionError, RollExtraInvalidoExceptionError
 
 
 class Frame(ABC):
@@ -26,7 +26,7 @@ class FrameNormal(Frame):
         if len(self.rolls) < 2:
             self.rolls.append(pins)
         else:
-            raise ValueError("Ya se han hecho todos los lanzamientos permitidos")
+            raise LanzamientoInvalidoError("Ya se han hecho todos los lanzamientos permitidos")
 
     def calcular_puntaje(self) -> int:
         puntaje = sum(self.rolls)
@@ -40,7 +40,7 @@ class FrameNormal(Frame):
                 puntaje += sum(self.proximo_frame.rolls)
                 return puntaje
         else:
-            raise
+            raise FrameInexisenteExceptionError("No hay un frame siguiente para calcular el puntaje")
 
     def es_strike(self) -> object:
         return len(self.rolls) == 1 and self.rolls[0] == 10
@@ -66,7 +66,7 @@ class Frame10(Frame):
             if self.es_strike() or self.es_spare():
                 self.agregar_roll_extra(pins)
         else:
-            raise ValueError("Ya se han hecho todos los lanzamientos permitidos")
+            raise LanzamientoInvalidoError("Ya se han hecho todos los lanzamientos permitidos")
 
     def es_strike(self) -> object:
         return len(self.rolls) == 1 and self.rolls[0] == 10
@@ -81,4 +81,31 @@ class Frame10(Frame):
         if self.es_strike() or self.es_spare():
             self.roll_extra = pins
         else:
-            raise ValueError("No se puede agregar roll extra si no es strike o spare")
+            raise RollExtraInvalidoExceptionError
+
+
+class Bowling:
+    def __init__(self):
+        self.frames: list[Frame] = []
+        self.crear_frames()
+
+    def agregar_frame(self, frame: Frame):
+        self.frames.append(frame)
+
+    def crear_frames(self):
+        frame = FrameNormal()
+        for i in range(9):
+            if i < 8:
+                proximo_frame = FrameNormal
+            else:
+                proximo_frame = Frame10()
+
+            frame.proximo_frame = proximo_frame
+            self.frames.append(frame)
+            frame = proximo_frame
+
+    def puntaje_total(self):
+        puntaje_total = 0
+        for frame in self.frames:
+            puntaje_total += frame.calcular_puntaje()
+            return puntaje_total

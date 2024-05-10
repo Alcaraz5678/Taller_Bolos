@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1043e005-1567-44f3-a50e-7242f05213ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagenes/Modelo del mundo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/model/excepciones.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/model/implementaciones.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/ui/consola.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1043e005-1567-44f3-a50e-7242f05213ad" name="Changes" comment="Agrego avancees al Código&#10;y modelo de mundo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/model/excepciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/model/excepciones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/model/implementaciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/model/implementaciones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +48,35 @@
       <recent name="C:\Users\user\PycharmProjects\Taller_Bolos\imagenes" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="consola" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Taller_Bolos" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/ui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/ui/consola.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.consola" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,6 +93,19 @@
       <option name="presentableId" value="Default" />
       <updated>1715304397343</updated>
     </task>
+    <task id="LOCAL-00001" summary="Agrego avancees al Código&#10;y modelo de mundo">
+      <option name="closed" value="true" />
+      <created>1715311298035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715311298035</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Agrego avancees al Código&#10;y modelo de mundo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego avancees al Código&#10;y modelo de mundo" />
   </component>
 </project>
